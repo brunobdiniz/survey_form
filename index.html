@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css" />
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Solway:wght@300&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <main>
+            <header action="" method="post" class='survey'>
+                <h1 id="title">We want to know what can we do better :)</h1>
+                <p id="subtitle">Dear user, we could not be happier with your support.<br>Wait, actually we could: take a short minute to help us improve, if possible. That would mean a lot to us.</p>
+            </header>
+            
+            <form id="survey-form" class="survey">
+                <hr>
+                <fieldset>
+                    <label for="name" id="name-label">Name
+                        <input id="name" name="name" type="text" placeholder="Enter your name" required/>
+                    </label>
+                    
+                    <label for="email" id="email-label">Email 
+                        <input id="email" name="email" type="email" placeholder="Enter your Email" required />
+                    </label>
+                    
+                    <label for="number" id="number-label">Age<span class="clue"> (optional)</span>
+                        <input id="number" name="age" type="number" min="10" max="120" placeholder="Age" class="form-control" />
+                    </label>
+                </fieldset>
+                
+                <fieldset>
+                    <label for="dropdown">
+                        <p class="subtitle">How interested are you in hear more about our product?</p>
+                        <select id="dropdown" name="dropdown">
+                            <option value="0">Select current role</option>
+                            <option value="1">Not at all</option>
+                            <option value="2">Not much</option>
+                            <option value="3">Yeah, a bit</option>
+                            <option value="4">Yeah, definitely</option>
+                            <option value="5">Other</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <label for="yes">
+                        <p class="subtitle">Have you purchased something from us already?</p>
+                        <input id="yes" type="radio" name="ownership" class="inline" value="1"/> Yes 
+                    </label>
+                    
+                    <label for="no1"><input id="no1" type="radio" name="ownership" class="inline" value="2"/> No 
+                    </label>
+                    
+                    <label for="no2"><input id="no2" type="radio" name="ownership" class="inline" value="3"/> No, but I would like to 
+                    </label>
+                </fieldset>
+                
+                <fieldset>
+                    <label for="news" name="news">
+                        <p class="subtitle">What is your primary source of information about our market?<span class="clue"> (check all that aplly)</span></p>
+                        <input id="news" type="checkbox" name="news" class="inline" value="1"/>News 
+                    </label>
+                    <label for="books" name="books"><input id="books" type="checkbox" name="books" class="inline" value="2"/> Books 
+                    </label>
+                    <label for="journals" name="journals"><input id="journals" type="checkbox" name="back" class="inline" value="3" /> Journals 
+                    </label>
+                    <label for="socials" name="socials"><input id="socials" type="checkbox" name="back" class="inline" value="4" /> Socials (instagram, facebook, twitter, linkedin...) 
+                    </label>
+                    <label for="people" name="people"><input id="people" type="checkbox" name="back" class="inline" value="5" /> From people that I know (professors, friends, family...) 
+                    </label>
+                    <label for="other" name="other"><input id="other" type="checkbox" name="back" class="inline" value="6" /> Other 
+                    </label>
+                    <label for="none" name="none"><input id="none" type="checkbox" name="back" class="inline" value="7" /> None of the above 
+                    </label>
+                </fieldset>
+                
+                <fieldset>
+                    <label for="comments">What would you suggest to improve general knowledge about our products?
+                        <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <input id="submit" type="submit" value="Submit"/>
+                    <hr>
+                    <p id="description" class="subtitle_last"> Thank you for your support!</p>
+                </fieldset>
+                
+            </form>
+        </main>
+    </body>
+</html>
